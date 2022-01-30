@@ -17,7 +17,7 @@ System properties to be set on start up
 - spring.datasource.url - url to DB;
 - spring.datasource.username - DB user name;
 - spring.datasource.password - DB user password;
-- num-service.max-value - max value than can be passed to the service. 
+- num-service.max-value - max value that can be passed to the service. 
   This value must be >=0 and < Integer.MAX_VALUE.
 
 Example command:
