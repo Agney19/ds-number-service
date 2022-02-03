@@ -14,7 +14,7 @@ Navigate to the project root and execute:
 
 ### How to run it
 System properties to be set on start up
-- spring.datasource.url - url to DB;
+- spring.datasource.url - url to PostgreSQL DB;
 - spring.datasource.username - DB user name;
 - spring.datasource.password - DB user password;
 - num-service.max-value - max value that can be passed to the service. 
