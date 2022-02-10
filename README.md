@@ -1,7 +1,6 @@
 # HSE. Distributed Systems. Achievement #2
 
 ### What is it
-
 The Java Spring Web service which takes one number N and returns N+1 if:
 1. N is received for the first time;
 2. There wasn't N+1 received earlier.
@@ -28,3 +27,6 @@ Example command:
 - Request Body: { value : NUMBER }; 
   Must be 0 <= value <= num-service.max-value
 - Response Body: { value : NUMBER }
+
+
+![ds-num-service-diagrams drawio](https://user-images.githubusercontent.com/44546177/153476372-d819ef85-b7f1-4d2e-b84e-792acba8df8a.png)
