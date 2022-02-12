@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ds-number-service-service
+spec:
+  selector:
+    app: ds-number-service
+  ports:
+    - name: ds-number-service
+      protocol: TCP
+      port: 8080
+      targetPort: 8080

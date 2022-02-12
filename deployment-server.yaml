@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ds-number-service-deployment
+  labels:
+    app: ds-number-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ds-number-service
+  template:
+    metadata:
+      labels:
+        app: ds-number-service
+    spec:
+      containers:
+      - name: ds-number-service
+        image: agney/ds-number-service:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: SERVICE_MAX_NUMBER
+          value: "100"
+        - name: DB_URL
+          value: "jdbc:postgresql://db-service:5432/postgres"
+        - name: DB_USER
+          value: "test"
+        - name: DB_PASSWORD
+          value: "test"
