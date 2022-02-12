@@ -8,7 +8,7 @@ The Java Spring Web service which takes one number N and returns N+1 if:
 If any of the aforementioned conditions is not satisfied, an exception with a descriptive message will be thrown.
 
 ### How to build it
-Navigate to the project root and execute (Gradle 11 is required):
+Navigate to the project root and execute (Gradle 11 and JDK 11 is required):
 - gradle build
 
 ### How to run it
