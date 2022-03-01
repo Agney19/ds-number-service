@@ -22,6 +22,8 @@ spec:
         env:
         - name: SERVICE_MAX_NUMBER
           value: "100"
+        - name: SERVICE_TIMEOUT
+          value: "5000"
         - name: DB_URL
           value: "jdbc:postgresql://db-service:5432/postgres"
         - name: DB_USER

@@ -21,7 +21,7 @@ public class NumDao {
     private final JdbcTemplate jdbcTemplate;
 
     @Transactional(isolation = Isolation.SERIALIZABLE)
-    public synchronized void assertValidAndSave(int value) throws DataAccessException {
+    public void assertValidAndSave(int value) throws DataAccessException {
         jdbcTemplate.query(String.format("select * from numbers where value = %s or value = %s order by value", value, value + 1),
                 (rs, rowNum) -> {
                     int storedValue = rs.getInt("value");
